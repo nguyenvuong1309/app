@@ -1,0 +1,126 @@
+.login-mb {
+  background-color: #127782 !important;
+  padding-bottom: 20px;
+
+  &__top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #e8e8e8;
+    padding: 60px 0 150px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+
+    .icon-1 {
+      position: absolute;
+      width: 140px;
+      height: 194px;
+      top: -40px;
+      left: -50px;
+      transform: rotate(-157deg);
+    }
+
+    .logo {
+      h1 {
+        text-transform: uppercase;
+        color: #54c9bd;
+        text-align: center;
+        font-size: 36px;
+        margin-top: -50px;
+      }
+
+      img {
+        width: 250px;
+        height: 250px;
+      }
+    }
+
+    p {
+      text-transform: uppercase;
+      color: #8b8b8b;
+      text-align: center;
+      margin-top: 12px;
+      font-size: 18px;
+      padding: 0 24px;
+    }
+  }
+
+  &__form {
+    padding: 24px 32px;
+    background-color: #fff;
+    margin: -100px auto 0;
+    width: 90%;
+    z-index: 10;
+    position: relative;
+    border-radius: 20px;
+
+    .form-group {
+      position: relative;
+      margin-top: 24px;
+
+      input {
+        height: 44px;
+        border-radius: 32px;
+        width: 100%;
+        background-color: #e6e1e1;
+        padding-left: 40px;
+      }
+
+      svg {
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        transform: translateY(-50%);
+        color: #fff;
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .form-action {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: #3685cd;
+      padding: 0 16px;
+      margin-top: 16px;
+
+      .remember {
+        display: flex;
+        align-items: center;
+
+        input {
+          margin-right: 4px;
+          width: 10px;
+          height: 10px;
+          border: 1px solid #3685cd;
+        }
+      }
+    }
+
+    .form-btn {
+      width: 100%;
+      height: 44px;
+      text-align: center;
+      background-color: #54c9bd;
+      border-radius: 32px;
+      margin-top: 32px;
+      color: #fff;
+      font-size: 18px;
+    }
+
+    .form-note {
+      font-size: 14px;
+      color: #8b8b8b;
+      text-align: center;
+      margin-top: 8px;
+
+      a {
+        color: #3685cd;
+      }
+    }
+  }
+}

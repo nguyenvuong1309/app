@@ -1,0 +1,119 @@
+.pricing-container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+  padding: 16px;
+
+  h1 {
+    font-size: 36px;
+    margin-bottom: 32px;
+  }
+}
+
+.pricing {
+  width: 100%;
+
+  &__type {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__price {
+    color: #f16f6f;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  th {
+    background-color: #e0e0e0;
+    border-radius: 16px 16px 0 0;
+    padding: 12px 0 8px;
+
+    &:first-child {
+      background-color: #fff;
+    }
+
+    &:last-child {
+      border: 4px solid #f16f6f;
+      border-bottom: none;
+    }
+  }
+
+  tbody {
+    tr:last-child {
+      td {
+        border-radius: 0 0 16px 16px;
+
+        &:last-child {
+          border-bottom: 4px solid #f16f6f;
+        }
+      }
+    }
+
+    td {
+      font-weight: 400;
+
+      svg {
+        width: 32px;
+        height: 32px;
+        fill: #127782;
+      }
+
+      a {
+        display: inline-block;
+        border-radius: 12px;
+        padding: 8px 20px;
+        background-color: #127782;
+        color: #fff;
+        margin-bottom: 12px;
+        font-size: 27px;
+      }
+
+      &:last-child {
+        border: 4px solid #f16f6f;
+        border-top: none;
+        border-bottom: none;
+      }
+    }
+
+    .pricing__title {
+      td {
+        padding: 16px;
+        background-color: #6ba4ab;
+        font-size: 24px;
+        font-weight: 700;
+
+        &:first-child {
+          background-color: #78b1b8;
+        }
+      }
+    }
+
+    .pricing__item {
+      td {
+        padding: 8px 0;
+        font-size: 24px;
+        font-weight: 500;
+        text-align: center;
+        background-color: #e0e0e0;
+
+        &:first-child {
+          text-align: left;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+
+  .most-popular {
+    position: relative;
+
+    img {
+      position: absolute;
+      width: 90px;
+      top: -4px;
+      right: -16px;
+    }
+  }
+}

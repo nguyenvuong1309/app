@@ -1,0 +1,38 @@
+import * as z from "zod";
+
+export const userProfileSchema = z.object({
+  id: z.string().nullable(),
+  email: z.string().email().nullable(),
+  phone: z.string().nullable(),
+  address: z.string().nullable(),
+  type: z.string().nullable(),
+  //   city: z.string().optional(),
+  city: z.string().nullable(),
+  state: z.string().nullable(),
+  pincode: z.string().nullable(),
+  country: z.string().nullable(),
+  profile_pic: z.string().url().nullable(),
+  account_status: z.string().nullable(),
+  role: z.string().nullable(),
+  dob: z.string().nullable(),
+  username: z.string().min(3).optional(),
+  //   password: z.string().min(6).nullable(),
+  social_media_links: z.string().nullable(),
+  addition_details: z.string().nullable(),
+  //   language: z.array(z.string()).nullable(),
+  departMent: z.string().nullable(),
+  designation: z.string().nullable(),
+  time_zone: z.string().nullable(),
+  last_login: z.string().nullable(),
+  last_device: z.string().nullable(),
+  last_ip: z.string().nullable(),
+  currency: z.string().nullable(),
+  //   domain_user_id: z.string().nullable(),
+  domain_name: z.string().nullable(),
+  plan_type: z.string().nullable(),
+  //   added_by_user_id: z.string().nullable(),
+  created_at: z.string().nullable(),
+  updated_at: z.string().nullable(),
+});
+
+export type UserProfile = z.infer<typeof userProfileSchema>;

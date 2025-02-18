@@ -1,0 +1,93 @@
+.forget-password-mb {
+  padding-bottom: 80px;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    gap: 24px;
+    padding: 0 60px;
+
+    form {
+      width: 100%;
+    }
+
+    svg {
+      width: 75px;
+      height: 85px;
+    }
+
+    h2 {
+      font-weight: 700;
+      color: #8b8b8b;
+    }
+
+    p {
+      color: #8b8b8b;
+      margin: 0 20px;
+      text-align: center;
+    }
+
+    input {
+      border: none;
+      border-radius: 40px;
+      font-size: 16px;
+      height: 48px;
+      width: 100%;
+      margin-bottom: 8px;
+      padding: 0 20px;
+
+      &::placeholder {
+        color: #8b8b8b;
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &__button {
+    margin-top: 20px;
+
+    .lux-btn {
+      width: 100%;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 18px;
+      height: 48px;
+    }
+  }
+}
+
+.forget-send-mb {
+  &__message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 80px 20px;
+
+    img {
+      width: 160px;
+    }
+
+    h2 {
+      font-size: 24px;
+      color: #8b8b8b;
+      font-weight: 400;
+    }
+
+    p {
+      font-size: 18px;
+      color: #8b8b8b;
+      margin-bottom: 16px;
+    }
+
+    .lux-btn {
+      height: 40px;
+      line-height: 40px;
+      font-size: 24px;
+      font-weight: 400;
+      padding: 0 60px;
+    }
+  }
+}
