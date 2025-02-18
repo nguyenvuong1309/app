@@ -28,6 +28,9 @@ export const HomeHeaderBar: React.FC = () => {
     });
     navigate(PATH.LOGIN);
   };
+  const onNavigateToLandlordDashboard = () => {
+    navigate(PATH.LANDLORD_DASHBOARD);
+  };
   return (
     <div className="flex justify-center w-full">
       <style>
@@ -5373,9 +5376,9 @@ export const HomeHeaderBar: React.FC = () => {
                             <a href="">Tenant Portal</a>
                           </li>
                           <li className="">
-                            <a href="http://localhost:3000/landlord/dashboard">
-                              List your Oasis
-                            </a>
+                            <button onClick={onNavigateToLandlordDashboard}>
+                              <a>List your Oasis</a>
+                            </button>
                           </li>
                         </ul>
                       </div>
