@@ -71,19 +71,19 @@ const adminSidebarMenuItems = [
   {
     id: "payments",
     label: "Payments",
-    path: "/payments",
+    path: PATH.LANDLORD_PAYMENT,
     icon: <CreditCard />,
   },
   {
     id: "expenses",
     label: "Expenses",
-    path: "/expenses",
+    path: PATH.LANDLORD_EXPENSES,
     icon: <CreditCard />,
   },
   {
     id: "accounting",
     label: "Accounting",
-    path: "/accounting",
+    path: PATH.LANDLORD_ACCOUNTING,
     icon: <CreditCard />,
   },
 ];

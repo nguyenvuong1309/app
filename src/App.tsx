@@ -41,6 +41,9 @@ import { ViewingAppointments } from "./pages/landlord/pages/leads/viewing_appoin
 import { ApplicantsHome } from "./pages/landlord/applicants/pages/applicants_home/ApplicantsHome";
 import { ApplicantsDetail } from "./pages/landlord/applicants/pages/applicants_detail/ApplicantsDetail";
 import { TenantsHome } from "./pages/landlord/pages/tenants/pages/tenants_home/TenantsHome";
+import { PaymentHome } from "./pages/landlord/pages/payment/pages/payment_home/PaymentHome";
+import { SetupPayment } from "./pages/landlord/pages/payment/pages/setup_payment/SetupPayment";
+import { ExpensesHome } from "./pages/landlord/pages/expenses/pages/expenses_home/ExpensesHome";
 
 export const App = () => {
   const router = createBrowserRouter([
@@ -204,6 +207,22 @@ export const App = () => {
           path: PATH.LANDLORD_TENANTS,
           element: <ProtectedRoute element={<TenantsHome />} />,
         },
+        {
+          path: PATH.LANDLORD_PAYMENT,
+          element: <ProtectedRoute element={<PaymentHome />} />,
+        },
+        {
+          path: PATH.LANDLORD_PAYMENT_SETUP,
+          element: <ProtectedRoute element={<SetupPayment />} />,
+        },
+        {
+          path: PATH.LANDLORD_EXPENSES,
+          element: <ProtectedRoute element={<ExpensesHome />} />,
+        },
+        // {
+        //   path: PATH.LANDLORD_ACCOUNTING,
+        //   element: <ProtectedRoute element={<AccountingHome />} />,
+        // },
       ],
     },
     { path: PATH.NOT_FOUND, element: <PageNotFound /> },

@@ -37,6 +37,10 @@ const PATH = {
   LANDLORD_LEADS_VIEWING_APPOINTMENTS: "/landlord/leads/viewing-appointments",
   LANDLORD_APPLICANTS: "/landlord/applicants",
   LANDLORD_TENANTS: "/landlord/tenants",
+  LANDLORD_PAYMENT: "/landlord/payment",
+  LANDLORD_PAYMENT_SETUP: "/landlord/payment/setup",
+  LANDLORD_EXPENSES: "/landlord/expenses",
+  LANDLORD_ACCOUNTING: "/landlord/accounting",
   NOT_FOUND: "*",
 };
 
