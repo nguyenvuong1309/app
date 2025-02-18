@@ -40,6 +40,7 @@ import { InviteLeads } from "./pages/landlord/pages/leads/invite_leads/InviteLea
 import { ViewingAppointments } from "./pages/landlord/pages/leads/viewing_appointments/ViewingAppointments";
 import { ApplicantsHome } from "./pages/landlord/applicants/pages/applicants_home/ApplicantsHome";
 import { ApplicantsDetail } from "./pages/landlord/applicants/pages/applicants_detail/ApplicantsDetail";
+import { TenantsHome } from "./pages/landlord/pages/tenants/pages/tenants_home/TenantsHome";
 
 export const App = () => {
   const router = createBrowserRouter([
@@ -198,6 +199,10 @@ export const App = () => {
         {
           path: PATH.LANDLORD_APPLICANTS + "/:id",
           element: <ProtectedRoute element={<ApplicantsDetail />} />,
+        },
+        {
+          path: PATH.LANDLORD_TENANTS,
+          element: <ProtectedRoute element={<TenantsHome />} />,
         },
       ],
     },

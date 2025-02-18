@@ -65,7 +65,7 @@ const adminSidebarMenuItems = [
   {
     id: "tenants",
     label: "Tenants",
-    path: "/tenants",
+    path: PATH.LANDLORD_TENANTS,
     icon: <User />,
   },
   {
